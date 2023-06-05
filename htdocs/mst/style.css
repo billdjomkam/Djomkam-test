@@ -1,0 +1,121 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'roboto',sans-serif ;
+}
+.entete{
+    margin-top: 0%;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+nav{
+    float: right;
+    
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    text-decoration: none;
+    margin-top: 25px;
+}
+        
+ul li a{
+    padding: 10px;
+    text-transform: uppercase;
+    border:1px solid transparent;
+    font-weight: 500;
+    transition:0.6 ease;
+    font-style: bold;
+    margin:10px 20px ;
+    color: black;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color:rgb(0, 153, 255);
+    color:white;
+    border-radius:5px 5px 5px 5px;
+}
+ul li a:focus{
+    background-color:rgb(0, 153, 255);
+    color:white;
+    border-radius:5px 5px 5px 5px;
+}
+
+.bien{
+    text-align: center;
+    position: relative;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+}
+.principale {
+    margin-top:150px;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:10%;
+    width: 60%;
+    grid-template-rows: auto 1fr auto;
+}
+ol li a{
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+}
+footer{
+    width: 100%;
+    position: relative;
+    bottom:0px;
+}
+.pied{
+    float:right;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    
+}
+.contact{
+    text-decoration: none;
+    color:black;
+}
+.contact:hover{
+    color:rgb(0, 153, 255);
+}
+main{
+    flex-grow: 1;
+}
+.confirmation{
+    width: 30%;
+    height: 25%;
+    margin:auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    animation: anime 0.5s ease-out;
+}
+@keyframes anime{
+    from{
+        transform: translate(-70px);
+    }
+}@media screen and (max-width:1024px){
+    body{
+        display: flex;
+        flex-direction:column
+    }
+    header{
+        margin-top:0%;
+        padding:0%;
+        margin:0%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .logo{
+        display:none;
+    }
+    nav{
+        margin:auto;
+    }
+
+}
